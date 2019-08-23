@@ -9,7 +9,7 @@ musical_groups = [
 ]
 
 # first approach using a variable
-PRINT = True
+PRINT = False
 for groups in musical_groups:
 	if PRINT:
 		print(', '.join(groups))
@@ -17,3 +17,10 @@ for groups in musical_groups:
 	else:
 		PRINT = True
 
+
+
+
+# second approach using a enumarate list and % operator
+for line, groups in enumerate(musical_groups):
+	if line % 2:
+		print(', '.join(groups))
