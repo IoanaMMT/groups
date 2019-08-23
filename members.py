@@ -8,5 +8,12 @@ musical_groups = [
     ["Run", "DMC", "Jam Master Jay"],
 ]
 
+# first approach using a variable
+PRINT = True
 for groups in musical_groups:
-    print(', '.join(groups))
+	if PRINT:
+		print(', '.join(groups))
+		PRINT = False
+	else:
+		PRINT = True
+
