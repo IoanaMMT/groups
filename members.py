@@ -24,3 +24,9 @@ for groups in musical_groups:
 for line, groups in enumerate(musical_groups):
 	if line % 2:
 		print(', '.join(groups))
+
+
+# third option using range and length
+for line in range(len(musical_groups)):
+	if line % 2:
+		print(', '.join(musical_groups[line]))
