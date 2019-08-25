@@ -8,9 +8,33 @@ musical_groups = [
     ["Run", "DMC", "Jam Master Jay"],
 ]
 
+# first approach using a variable
+PRINT = False
 for groups in musical_groups:
+<<<<<<< HEAD
     print(', '.join(groups))
 
 for groups in musical_groups:
     if(len(groups) == 3):
         print(", ".join(groups))
+=======
+	if PRINT:
+		print(', '.join(groups))
+		PRINT = False
+	else:
+		PRINT = True
+
+
+
+
+# second approach using a enumarate list and % operator
+for line, groups in enumerate(musical_groups):
+	if line % 2:
+		print(', '.join(groups))
+
+
+# third option using range and length
+for line in range(len(musical_groups)):
+	if line % 2:
+		print(', '.join(musical_groups[line]))
+>>>>>>> 48f4f44feba69bd49c40035d332b149151ef27b1
