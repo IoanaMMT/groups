@@ -10,3 +10,7 @@ musical_groups = [
 
 for groups in musical_groups:
     print(', '.join(groups))
+
+for groups in musical_groups:
+    if(len(groups) == 3):
+        print(", ".join(groups))
